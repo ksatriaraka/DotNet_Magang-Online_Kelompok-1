@@ -16,6 +16,8 @@ namespace Departemen_Matematika.Services
         public DbSet<Member> Members { get; set; }
         public DbSet<Dosen> Dosen { get; set; }
 
+        public DbSet<Mahasiswa> Mahasiswa { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
